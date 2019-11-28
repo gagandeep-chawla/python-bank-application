@@ -3,14 +3,12 @@ import datetime
 def input_name(name):
     instance = ''
     while True:
-        while True:
-            instance = input('Enter your {} name ?'.format(name))
-            if instance.isalpha():
-                break
-            else:
-                print('invalid {} name'.format(instance))
-                continue
-            
+        instance = input('Enter your {} name ?'.format(name))
+        if instance.isalpha():
+            break
+        else:
+            print('invalid {} name'.format(instance))
+            continue
     return instance
 
 
@@ -57,7 +55,7 @@ def input_phone():
         try:
             number = int(input('Please enter the moblie number'))
             if  len(str(number)) != 10:
-                pinrt('invalid number')
+                print('invalid number')
                 continue
             break
         except:
@@ -65,6 +63,5 @@ def input_phone():
             continue
     return number
     
-                    
-            
-        
+def input_married():
+    pass
